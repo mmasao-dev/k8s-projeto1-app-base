@@ -2,9 +2,9 @@ FROM mysql:5.7
 
 WORKDIR /var/lib/mysq;/
 
-ENV MYSQL_ROOT_PASSWORD-SENHA123
+ENV MYSQL_ROOT_PASSWORD=SENHA123
 
-ENV MYSQL_DATABASE-meubanco
+ENV MYSQL_DATABASE=meubanco
 
 ADD sql.sql /docker-encryptpoint-initdb.d
 
