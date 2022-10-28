@@ -9,11 +9,12 @@ echo "Realisando push das imagens ......."
 docker push mmasao/projeto-backend:1.0
 docker push mmasao/projeto-database:1.0
 
-echo "Criando serviços do cluster kubernetes"
+echo "Criando serviços do cluster kubernetes......"
 
 kubctl apply -f ./services.yml
 
 
+echo "Criando deployments........."
 
-
+kubctl apply -f ./deployments.yml
 
