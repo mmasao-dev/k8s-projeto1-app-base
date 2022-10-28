@@ -11,10 +11,10 @@ docker push mmasao/projeto-database:1.0
 
 echo "Criando serviços do cluster kubernetes......"
 
-kubctl apply -f ./services.yml
+kubectl apply -f ./services.yml
 
 
 echo "Criando deployments........."
 
-kubctl apply -f ./deployments.yml
+kubectl apply -f ./deployments.yml
 
